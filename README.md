@@ -1,7 +1,7 @@
 <h1 align="center">AtomGPT</h1>
 <h4 align="center">
     <p>
-        <a href="https://github.com/AtomEcho/AtomGPT/blob/main/README_EN.md">English</a> |
+        <a href="https://github.com/AtomEcho/AtomBulb/README_EN.md">English</a> |
         <b>中文</b>
     <p>
 </h4>
@@ -223,18 +223,20 @@
 
 ### 测试数据
 #### 数据来源
+我们统计了每个问题的来源，如下表：
 
 
 | 来源        | 数量                 |
 | ----------- | ------------------ |
-| [BELLE eval set]()   | 1000条 |
-| [十万个为什么]()   | 30 |
-| [WikiHow]()   | 20条 |
-| [弱智吧]()   | 24条 |
+| [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json)   | 1000条 |
+| [十万个为什么](https://10why.net/)   | 30 |
+| [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5)   | 20条 |
+| [弱智吧](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3)   | 24条 |
 |其他|17条|
 
 
 #### 类别统计
+我们统计了每个类别问题的频次，如下表：
 
 <table>
   <tr>
