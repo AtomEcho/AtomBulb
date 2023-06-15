@@ -1,4 +1,4 @@
-<h1 align="center">AtomBulb</h1>
+<h1 align="center">AtomBulb<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=50 height=50 /></h1>
 <h4 align="center">
     <p>
         <a href="">English</a> |
@@ -16,7 +16,7 @@
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/xinghuo.svg width=30 height=30 /> 讯飞的星火大模型
 
 
-我们尝试和这些未来的AGI对话，去了解它们的所思所想，打破人类和AGI之间的认知隔阂。[**Bulb**](https://bulb.atomecho.cn/)项目的名称意为“灯泡”，旨在为大型模型产品的能力边界照亮明灯，以便我们能够对它们有更具体和定量的认识。在我们的官网获取更详细的信息：https://bulb.atomecho.cn
+我们尝试和这些未来的AGI对话，去了解它们的所思所想，打破人类和AGI之间的认知隔阂。[**Bulb**](https://bulb.atomecho.cn/)<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=30 height=30 /> 项目的名称意为“灯泡”，旨在为大型模型产品的能力边界照亮明灯，以便我们能够对它们有更具体和定量的认识。在我们的官网获取更详细的信息：https://bulb.atomecho.cn
 
 未来，我们会不断为大模型家庭引入新的成员。为了能够更公平地去探索各个大模型的能力，我们为每个大模型起了个别名，包括：
 <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Radish.svg width=30 height=30 />萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Eggplant.svg width=30 height=30 />茄子、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Carrot.svg width=30 height=30 />胡萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Chili.svg width=30 height=30 />辣椒、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Pumpkin.svg width=30 height=30 />南瓜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Potato.svg width=30 height=30 />土豆等。
