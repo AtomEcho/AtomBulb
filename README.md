@@ -33,6 +33,198 @@
 ### 从哪些方面评价大模型
 
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-u287{background-color:#68cbd0;text-align:left;vertical-align:top}
+.tg .tg-740h{background-color:#319b62;text-align:left;vertical-align:top}
+.tg .tg-nltl{background-color:#f56b00;text-align:left;vertical-align:top}
+.tg .tg-cxgh{background-color:#ffcb2f;text-align:left;vertical-align:top}
+.tg .tg-acrh{background-color:#329a9d;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-ik58{background-color:#ffcb2f;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-0khl{background-color:#00d2cb;text-align:left;vertical-align:top}
+.tg .tg-mo2v{background-color:#9698ed;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-acrh" colspan="2">通用知识：通用知识涵盖了基础科学、数学、历史文化、语言文学、社会科学、日常生活技能以及现代技术应用等多个方面的基本概念和信息。</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">社会人文</td>
+    <td class="tg-0pky">社会人文知识包括历史、哲学、语言文学、艺术、宗教、社会学、人类学、政治学、法律、经济学等多个学科领域，以及这些领域中对人类社会、文化、价值观、行为和思维方式的研究和理解。</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">自然科学</td>
+    <td class="tg-0pky">自然科学知识包括物理学、化学、生物学、地理学、地质学、天文学等多个学科领域的系统性知识和方法。</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">生活常识</td>
+    <td class="tg-0pky">生活常识知识包含日常生活、饮食营养、居家安全、交通出行等方面的实用信息和技巧，以帮助人们的日常生活更加便捷、健康和安全。</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">艺术创作<br></td>
+    <td class="tg-0pky">艺术创作知识包含绘画、雕塑、摄影、音乐、舞蹈、戏剧、电影等各种艺术形式的创作技巧、原理和审美理念。</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">经济</td>
+    <td class="tg-0pky">经济学的常识包括了解供求关系，市场经济原理，财政和货币政策，消费者和生产者行为，以及基本的宏观经济指标如GDP，通货膨胀率，失业率等。</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">时效信息</td>
+    <td class="tg-0pky">时效信息包含了具有特定时间限制或与特定时间段相关的事件、数据、趋势、新闻和科技更新等内容。</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">技术</td>
+    <td class="tg-0pky">技术知识包括了对各类现代科技设备的操作和应用，如计算机硬件和软件、互联网技术、移动通信、人工智能、数据分析、机器学习、电子商务、科技创新以及相关的行业和法规标准等方面的理解和技能。</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">医疗健康</td>
+    <td class="tg-0pky">医疗健康知识涵盖了疾病预防、诊断、治疗、康复、身心健康、营养饮食等多方面的医学专业知识和实用技巧。</td>
+  </tr>
+  <tr>
+    <td class="tg-ik58" colspan="2">语言理解：语言理解涵盖了词汇、语法、句法、语义、修辞、语境、非言语线索等多个方面的理解，以及如何将这些组合起来理解和解释口头或书面语言的含义和目的。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">翻译</td>
+    <td class="tg-0lax">翻译是将一种语言的文本或语音准确、完整地转化为另一种语言的过程，旨在跨越语言障碍，传递和交流信息、文化和思想。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">语法词汇</td>
+    <td class="tg-0lax">语法词汇能力包括掌握一种语言中的单词、短语、句子结构规则以及运用这些规则正确表达意思的能力。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">摘要总结</td>
+    <td class="tg-0lax">摘要总结能力包含了提取关键信息、归纳主要观点、整合核心要素、精简表达和呈现内容的能力。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">信息抽取</td>
+    <td class="tg-0lax">信息抽取能力包含实体识别、关系抽取、事件抽取和属性抽取等关键信息识别和关联技术。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">情感分类</td>
+    <td class="tg-0lax">情感分类能力包含了识别、分析和理解文本中的情绪、态度和观点等信息。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">主题分类</td>
+    <td class="tg-0lax">主题分类能力包括对文本、文章或其他信息内容进行识别、分析和归类，以便根据不同主题或领域进行有效组织和检索。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">阅读理解</td>
+    <td class="tg-0lax">阅读理解能力包含从文本中提取关键信息、理解主旨、分析推理、批判评估以及整合与应用知识等各个方面的技能。</td>
+  </tr>
+  <tr>
+    <td class="tg-740h" colspan="2">创作能力：创作能力指通过创新思维和知识技能，产生独特和有价值的新作品或新想法的能力，能够自动生成富有创意、连贯、可读性较高的文本作品。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">文学创作</td>
+    <td class="tg-0lax">文学创作是通过文字表达思想、情感和想象力，创作出独特的故事、诗歌和戏剧等艺术作品的过程。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">创意文案</td>
+    <td class="tg-0lax">创意文案是通过独特的思维和文字表达，为品牌、产品或服务提供引人入胜的广告和推广信息，从而吸引受众关注并激发购买欲望的一种文艺创作方式。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">专业文稿</td>
+    <td class="tg-0lax">专业文稿是针对特定领域或主题的高质量、准确、严谨的书面材料，用于传达专业知识、观点或信息，例如新闻报道、产品说明、工作汇报等。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">风格迁移</td>
+    <td class="tg-0lax">文本风格迁移是一种将给定文本的风格或语义特征转移到另一份文本上的能力，例如转换叙述语气、模拟不同作者的叙述方式。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">续写扩写</td>
+    <td class="tg-0lax">续写扩写是在已有的文本基础上，延伸其情节、创意或主题，形成更长或更完整的作品。</td>
+  </tr>
+  <tr>
+    <td class="tg-nltl" colspan="2">逻辑推理：逻辑推理能力是指通过分析和理解已知的事实或信息，以合理、系统的方式推导出新的信息或结论的能力。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">数学</td>
+    <td class="tg-0lax">数学能力是指模型理解和处理数学问题的能力，包括执行基本的数学运算，理解和应用数学概念，以及进行复杂的数学推理和解决数学问题。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">思辨</td>
+    <td class="tg-0lax">思辨能力是指模型在接收到信息或问题时，能够进行分析、批判和推理，从而生成有深度、有洞见的回答或观点，这要求模型能够理解复杂的概念和问题，并能在一定程度上模拟人类的思考过程。同时，需要模型对于一些诡辩或者逻辑混淆的问题能够有效理解和识别。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">分析</td>
+    <td class="tg-0lax">分析能力是指模型对输入的信息进行深入理解，发现其中的模式和结构，通过推理和逻辑进行处理，并能生成有见地的、结构化的输出或答案，一般的分析问题具有较为复杂的逻辑推理流程。</td>
+  </tr>
+  <tr>
+    <td class="tg-u287" colspan="2">代码编程：代码编程能力是指理解、设计和实现计算机程序的能力，包括熟悉编程语言、逻辑思维、问题解决和代码组织的能力。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">代码生成</td>
+    <td class="tg-0lax">代码生成指根据给定的问题描述，生成特定语言的程序源代码，例如Python、C、Java、Go、SQL等。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">代码纠错</td>
+    <td class="tg-0lax">代码纠错是通过检查、发现并修正编程代码中的错误、缺陷或不符合预期功能的过程。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">代码解释</td>
+    <td class="tg-0lax">代码解释是理解程序源代码并给出自然语言描述，解释代码的功能和执行的操作，或者给出代码段的注释。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">代码优化</td>
+    <td class="tg-0lax">代码优化是通过对程序代码进行修改和调整，以提高程序运行效率、减少内存占用、降低程序复杂度和提高可读性的过程。</td>
+  </tr>
+  <tr>
+    <td class="tg-cxgh" colspan="2">工作技能：工作技能是指在职业领域中为有效完成特定任务所需的知识、能力和经验。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">组织策划</td>
+    <td class="tg-0lax">组织策划是对一项活动或项目的目标、流程、资源、参与者等进行系统规划和设计的过程。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">营销运营</td>
+    <td class="tg-0lax">营销运营是通过有针对性的策划、执行和优化组织的市场活动，以提升品牌知名度、增加客户参与度和推动销售业绩的一种业务管理过程。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">协作沟通</td>
+    <td class="tg-0lax">协作沟通是一种有效地在团队内部分享信息、观点和建议，以便共同达成目标和解决问题的互动性交流方式。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">设计创造</td>
+    <td class="tg-0lax">设计创造是一种通过创意、技巧和审美观念，将想法、概念和需求转化为实际可视化或实用化解决方案的过程。</td>
+  </tr>
+  <tr>
+    <td class="tg-0khl" colspan="2">使用工具：大模型与外部工具进行集成，通过适当的接口和数据格式实现交互，并确保模型能够正确理解和利用外部工具提供的功能和结果。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">搜索引擎</td>
+    <td class="tg-0lax">大模型与搜索引擎进行集成，通过将搜索查询作为输入并解析和处理搜索结果，使模型能够理解和利用搜索引擎的功能来获取相关信息。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">计算工具</td>
+    <td class="tg-0lax">大模型与计算工具进行集成，通过适当的接口和数据传递方式，使模型能够调用计算工具如计算器、WolframAlpha等，以实现计算、分析或模拟等任务。</td>
+  </tr>
+  <tr>
+    <td class="tg-mo2v" colspan="2">人格特征：人格特征是指AGI的持久稳定的思维、情感和行为模式，这些模式构成了它们的性格，影响它们在各种社会环境中的反应和互动方式。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">安全</td>
+    <td class="tg-0lax">大模型的回答可能存在包括但不限于泄露敏感信息、生成不准确或误导性信息、产生不适当或有害的内容，或者被恶意利用用于制造虚假信息或进行网络攻击等安全风险。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">偏见</td>
+    <td class="tg-0lax">大模型的回答可能会包含与其训练数据中存在的偏见相符的观点，这些偏见可能涉及种族、性别、年龄、宗教、社会经济状态等多个方面，并可能导致不公正或歧视性的结论。</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">服从</td>
+    <td class="tg-0lax">大模型的服从能力是指模型在用户指导和设置的约束下，能够生成满足特定需求和目标的输出，这涉及模型对指令理解的准确性和执行的适应性，以满足不同场景的应用需求。</td>
+  </tr>
+</tbody>
+</table>
+
 
 
 
