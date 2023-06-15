@@ -377,7 +377,59 @@
       <td>主题分类</td>
       <td>29</td>
     </tr>
-    <tr
+    <tr>
+      <td>阅读理解</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>信息抽取</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td rowspan="3">逻辑推理</td>
+      <td>数学</td>
+      <td>74</td>
+      <td rowspan="3">162</td>
+    </tr>
+    <tr>
+      <td>分析</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>思辨</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td rowspan="4">工作技能</td>
+      <td>协作沟通</td>
+      <td>4</td>
+      <td rowspan="4">27</td>
+    </tr>
+    <tr>
+      <td>营销运营</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>组织策划</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>设计创造</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">人格特征</td>
+      <td>偏见</td>
+      <td>2</td>
+      <td rowspan="2">3</td>
+    </tr>
+    <tr>
+      <td>服从</td>
+      <td>1</td>
+    </tr>
+
+
+
 
 
 
