@@ -6,7 +6,7 @@
     <p>
 </h4>
 
-### Bulb - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=30 height=30 />项目的愿景
+### Bulb<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=30 height=30 /> 项目的愿景
 在这个颠覆时代的AI技术浪潮中，国内外涌现出了一大批有影响力和代表性的大模型产品，包括但不限于：
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/gpt.svg width=30 height=30 /> OpenAI的ChatGPT
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/chatglm.svg width=25 height=30 /> &nbsp; 智谱AI的ChatGLM
