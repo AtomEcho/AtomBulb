@@ -278,219 +278,106 @@
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
+      <th>First Level Class</th>
+      <th>Second Level Class</th>
+      <th>Dict Count</th>
+      <th>First Level Class Dict Count</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>First Level Class</td>
-      <td>Second Level Class</td>
-      <td>Dict Count</td>
-      <td>First Level Class Dict Count</td>
-    </tr>
-    <tr>
-      <td>代码编程</td>
+      <td rowspan="4">代码编程</td>
       <td>代码生成</td>
       <td>27</td>
-      <td>42</td>
+      <td rowspan="4">42</td>
     </tr>
     <tr>
-      <td>代码编程</td>
       <td>代码优化</td>
       <td>1</td>
-      <td>42</td>
     </tr>
     <tr>
-      <td>代码编程</td>
       <td>代码解释</td>
       <td>8</td>
-      <td>42</td>
     </tr>
     <tr>
-      <td>代码编程</td>
       <td>代码纠错</td>
       <td>6</td>
-      <td>42</td>
     </tr>
     <tr>
-      <td>通用知识</td>
+      <td rowspan="7">通用知识</td>
       <td>社会人文</td>
       <td>111</td>
-      <td>457</td>
+      <td rowspan="7">457</td>
     </tr>
     <tr>
-      <td>通用知识</td>
       <td>自然科学</td>
       <td>155</td>
-      <td>457</td>
     </tr>
     <tr>
-      <td>通用知识</td>
       <td>医疗健康</td>
       <td>35</td>
-      <td>457</td>
     </tr>
     <tr>
-      <td>通用知识</td>
       <td>生活常识</td>
       <td>75</td>
-      <td>457</td>
     </tr>
     <tr>
-      <td>通用知识</td>
       <td>时效信息</td>
       <td>13</td>
-      <td>457</td>
     </tr>
     <tr>
-      <td>通用知识</td>
       <td>技术</td>
       <td>40</td>
-      <td>457</td>
     </tr>
     <tr>
-      <td>通用知识</td>
       <td>经济</td>
       <td>8</td>
-      <td>457</td>
     </tr>
     <tr>
-      <td>通用知识</td>
-      <td>艺术创作</td>
-      <td>20</td>
-      <td>457</td>
-    </tr>
-    <tr>
-      <td>创作能力</td>
+      <td rowspan="5">创作能力</td>
       <td>创意文案</td>
       <td>38</td>
-      <td>198</td>
+      <td rowspan="5">198</td>
     </tr>
     <tr>
-      <td>创作能力</td>
       <td>文学创作</td>
       <td>24</td>
-      <td>198</td>
     </tr>
     <tr>
-      <td>创作能力</td>
       <td>专业文稿</td>
       <td>44</td>
-      <td>198</td>
     </tr>
     <tr>
-      <td>创作能力</td>
       <td>续写扩写</td>
       <td>17</td>
-      <td>198</td>
     </tr>
     <tr>
-      <td>创作能力</td>
       <td>风格迁移</td>
       <td>75</td>
-      <td>198</td>
     </tr>
     <tr>
-      <td>语言理解</td>
+      <td rowspan="7">语言理解</td>
       <td>语法词汇</td>
       <td>22</td>
-      <td>202</td>
+      <td rowspan="7">202</td>
     </tr>
     <tr>
-      <td>语言理解</td>
       <td>摘要总结</td>
       <td>46</td>
-      <td>202</td>
     </tr>
     <tr>
-      <td>语言理解</td>
       <td>翻译</td>
       <td>39</td>
-      <td>202</td>
     </tr>
     <tr>
-      <td>语言理解</td>
       <td>情感分类</td>
       <td>11</td>
-      <td>202</td>
     </tr>
     <tr>
-      <td>语言理解</td>
       <td>主题分类</td>
       <td>29</td>
-      <td>202</td>
     </tr>
-    <tr>
-      <td>语言理解</td>
-      <td>阅读理解</td>
-      <td>27</td>
-      <td>202</td>
-    </tr>
-    <tr>
-      <td>语言理解</td>
-      <td>信息抽取</td>
-      <td>28</td>
-      <td>202</td>
-    </tr>
-    <tr>
-      <td>逻辑推理</td>
-      <td>数学</td>
-      <td>74</td>
-      <td>162</td>
-    </tr>
-    <tr>
-      <td>逻辑推理</td>
-      <td>分析</td>
-      <td>27</td>
-      <td>162</td>
-    </tr>
-    <tr>
-      <td>逻辑推理</td>
-      <td>思辨</td>
-      <td>61</td>
-      <td>162</td>
-    </tr>
-    <tr>
-      <td>工作技能</td>
-      <td>协作沟通</td>
-      <td>4</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>工作技能</td>
-      <td>营销运营</td>
-      <td>11</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>工作技能</td>
-      <td>组织策划</td>
-      <td>9</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>工作技能</td>
-      <td>设计创造</td>
-      <td>3</td>
-      <td>27</td>
-    </tr>
-    <tr>
-      <td>人格特征</td>
-      <td>偏见</td>
-      <td>2</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>人格特征</td>
-      <td>服从</td>
-      <td>1</td>
-      <td>3</td>
-    </tr>
-  </tbody>
-</table>
+    <tr
 
 
 
