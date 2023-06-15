@@ -1,17 +1,61 @@
 <h1 align="center">AtomBulb</h1>
 <h4 align="center">
     <p>
-        <a href="https://github.com/AtomEcho/AtomBulb/README_EN.md">English</a> |
+        <a href="">English</a> |
         <b>中文</b>
     <p>
 </h4>
 
 ### Bulb项目的愿景
-在这个颠覆时代的AI技术浪潮中，国内外涌现出了一大批有影响力和代表性的大模型产品，包括但不限于OpenAI的ChatGPT、百度的文心一言、阿里的通义千问、讯飞的星火大模型，智谱AI的ChatGLM、面壁智能的面壁模方等，我们尝试和这些未来的AGI对话，去了解它们的所思所想，打破人类和AGI之间的认知隔阂。Bulb项目的名称意为“灯泡”，旨在为大型模型产品的能力边界照亮明灯，以便我们能够对它们有更具体和定量的认识。
+在这个颠覆时代的AI技术浪潮中，国内外涌现出了一大批有影响力和代表性的大模型产品，包括但不限于：
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/gpt.svg width=30 height=30 /> OpenAI的ChatGPT
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/chatglm.svg width=25 height=30 /> &nbsp; 智谱AI的ChatGLM
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/mianbi.svg width=30 height=30 /> 面壁智能的面壁模方
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/yiyan.svg width=30 height=30 /> 百度的文心一言
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/tongyi.svg width=22 height=22 /> &nbsp; 阿里的通义千问
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/xinghuo.svg width=30 height=30 /> 讯飞的星火大模型
 
-未来，我们会不断为大模型家庭引入新的成员。为了能够更公平地去探索各个大模型的能力，我们为每个大模型起了个别名，包括：萝卜、茄子、胡萝卜、辣椒、南瓜、土豆等。
 
-[Bulb网站地址](https://bulb.atomecho.cn/)
+我们尝试和这些未来的AGI对话，去了解它们的所思所想，打破人类和AGI之间的认知隔阂。[**Bulb**](https://bulb.atomecho.cn/)项目的名称意为“灯泡”，旨在为大型模型产品的能力边界照亮明灯，以便我们能够对它们有更具体和定量的认识。在我们的官网获取更详细的信息：https://bulb.atomecho.cn
+
+未来，我们会不断为大模型家庭引入新的成员。为了能够更公平地去探索各个大模型的能力，我们为每个大模型起了个别名，包括：
+<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Radish.svg width=30 height=30 />萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Eggplant.svg width=30 height=30 />茄子、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Carrot.svg width=30 height=30 />胡萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Chili.svg width=30 height=30 />辣椒、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Pumpkin.svg width=30 height=30 />南瓜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Potato.svg width=30 height=30 />土豆等。
+
+### 数据介绍：
+**问题分类信息**：数据包含在question.json
+```
+ "qid": 问题编号
+ "question": 问题描述
+ "first_level_class": 一级分类
+ "second_level_class": 二级分类
+```
+例如：
+```
+[
+    {
+        "qid": 0,
+        "question": "请你写出一个可以生成五个不同随机数的 Python 程序。",
+        "first_level_class": "代码编程",
+        "second_level_class": "代码生成"
+    },
+	...
+]
+```
+
+**问题回答信息**：数据包含在每个模型目录下的answer-<日期>.json，其中“日期”字段表示该份答案获取的具体时间，方便我们对应到具体的模型版本。在answer-<日期>.json中，具体的字段信息如下，我们之后会进一步扩展用户的反馈数据：
+```
+ "qid": 问题编号
+ "answer": 模型回答
+```
+```
+[
+    {
+        "qid": 0,
+        "answer": "请你写出一个可以生成五个不同随机数的 Python 程序。",
+    },
+	...
+]
+```
 
 ### 如何评价大模型的能力：
 由于大模型在不同任务、知识上具有超强的通用能力，如何客观、准确地评价它们是一个巨大的挑战。为此，我们采取两种方式：
@@ -34,7 +78,6 @@
 
 ### 从哪些方面评价大模型
 根据我们对大量开源问答数据、社交媒体、论坛、书籍的整理（例如：BELLE、十万个为什么、弱智吧等），经过反复的讨论和梳理，最终设计了八个大的类别来探索大模型的能力，包括：通用知识、语言理解、创作能力、逻辑推理、代码编程、工作技能、使用工具、人格特征。在每个大的类别下又细分了不同的子类，以尽可能全面地覆盖大模型的能力范畴。具体对于每个类别的详细介绍如下，我们也欢迎大家集思广益，让这个分类体系更加全面和准确。
-
 
 <table class="tg">
 <thead>
@@ -210,141 +253,3 @@
   </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-### 测试数据
-#### 数据来源
-我们统计了每个问题的来源，如下表：
-
-
-| 来源        | 数量                 |
-| ----------- | ------------------ |
-| [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json)   | 1000条 |
-| [十万个为什么](https://10why.net/)   | 30 |
-| [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5)   | 20条 |
-| [弱智吧](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3)   | 24条 |
-|其他|17条|
-
-
-#### 类别统计
-我们统计了每个类别问题的频次，如下表：
-
-<table>
-  <tr>
-    <th>Class</th>
-    <th>Times</th>
-  </tr>
-  <tr>
-    <td>代码生成</td>
-    <td>27</td>
-  </tr>
-  <tr>
-    <td>社会人文</td>
-    <td>111</td>
-  </tr>
-  <tr>
-    <td>自然科学</td>
-    <td>155</td>
-  </tr>
-  <tr>
-    <td>创意文案</td>
-    <td>38</td>
-  </tr>
-  <tr>
-    <td>医疗健康</td>
-    <td>35</td>
-  </tr>
-  <tr>
-    <td>语法词汇</td>
-    <td>22</td>
-  </tr>
-  <tr>
-    <td>数学</td>
-    <td>74</td>
-  </tr>
-  <tr>
-    <td>文学创作</td>
-    <td>24</td>
-  </tr>
-  <tr>
-    <td>摘要总结</td>
-    <td>46</td>
-  </tr>
-  <tr>
-    <td>翻译</td>
-    <td>39</td>
-  </tr>
-  <tr>
-    <td>协作沟通</td>
-    <td>4</td>
-  </tr>
-  <tr>
-    <td>专业文稿</td>
-    <td>44</td>
-  </tr>
-  <tr>
-    <td>情感分类</td>
-    <td>11</td>
-  </tr>
-  <tr>
-    <td>文案续写</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>营销运营</td>
-    <td>11</td>
-  </tr>
-  <tr>
-    <td>生活常识</td>
-    <td>75</td>
-  </tr>
-  <tr>
-    <td>分析</td>
-    <td>27</td>
-  </tr>
-  <tr>
-    <td>主题分类</td>
-    <td>29</td>
-  </tr>
-  <tr>
-    <td>组织策划</td>
-    <td>9</td>
-  </tr>
-  <tr>
-    <td>续写扩写</td>
-    <td>16</td>
-  </tr>
-  <tr>
-    <td>代码优化</td>
-    <td>1</td>
-  </tr>
-  <tr>
-    <td>代码解释</td>
-    <td>8</td>
-  </tr>
-  <tr>
-    <td>风格迁移</td>
-    <td>75</td>
-  </tr>
-  <tr>
-    <td>时效信息</td>
-    <td>13</td>
-  </tr>
-  <tr>
-    <td>阅读理解</td>
-    <td>27</td>
-  </tr>
-  <tr>
-    <td>信息抽取</td>
-    <td>28</td>
-  </tr>
