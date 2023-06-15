@@ -253,3 +253,112 @@
   </tr>
 </tbody>
 </table>
+
+
+
+
+
+### 测试数据
+#### 数据来源
+我们统计了每个问题的来源，如下表：
+
+
+| 来源        | 数量                 |
+| ----------- | ------------------ |
+| [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json)   | 1000条 |
+| [十万个为什么](https://10why.net/)   | 30 |
+| [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5)   | 20条 |
+| [弱智吧](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3)   | 24条 |
+|其他|17条|
+
+
+#### 类别统计
+我们统计了每个类别问题的频次，如下表：
+
+<table>
+  <tr>
+    <th>Class</th>
+    <th>Times</th>
+    <th>Class</th>
+    <th>Times</th>
+  </tr>
+  <tr>
+    <td>代码生成</td>
+    <td>27</td>
+    <td>风格迁移</td>
+    <td>75</td>
+  </tr>
+  <tr>
+    <td>社会人文</td>
+    <td>111</td>
+    <td>时效信息</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td>自然科学</td>
+    <td>155</td>
+    <td>阅读理解</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>创意文案</td>
+    <td>38</td>
+    <td>信息抽取</td>
+    <td>28</td>
+  </tr>
+  <tr>
+    <td>医疗健康</td>
+    <td>35</td>
+    <td>思辨</td>
+    <td>61</td>
+  </tr>
+  <tr>
+    <td>语法词汇</td>
+    <td>22</td>
+    <td>技术</td>
+    <td>40</td>
+  </tr>
+  <tr>
+    <td>数学</td>
+    <td>74</td>
+    <td>经济</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>文学创作</td>
+    <td>24</td>
+    <td>代码纠错</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>摘要总结</td>
+    <td>46</td>
+    <td>偏见</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>翻译</td>
+    <td>39</td>
+    <td>设计创造</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>协作沟通</td>
+    <td>4</td>
+    <td>服从</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>专业文稿</td>
+    <td>44</td>
+    <td>艺术创作</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>情感分类</td>
+    <td>11</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
