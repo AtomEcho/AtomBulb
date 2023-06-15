@@ -33,23 +33,7 @@
 ### 从哪些方面评价大模型
 
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-u287{background-color:#68cbd0;text-align:left;vertical-align:top}
-.tg .tg-740h{background-color:#319b62;text-align:left;vertical-align:top}
-.tg .tg-nltl{background-color:#f56b00;text-align:left;vertical-align:top}
-.tg .tg-cxgh{background-color:#ffcb2f;text-align:left;vertical-align:top}
-.tg .tg-acrh{background-color:#329a9d;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-ik58{background-color:#ffcb2f;border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-0khl{background-color:#00d2cb;text-align:left;vertical-align:top}
-.tg .tg-mo2v{background-color:#9698ed;text-align:left;vertical-align:top}
-</style>
+
 <table class="tg">
 <thead>
   <tr>
