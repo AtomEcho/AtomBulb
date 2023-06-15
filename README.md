@@ -280,8 +280,8 @@
     <tr style="text-align: right;">
       <th>First Level Class</th>
       <th>Second Level Class</th>
-      <th>Dict Count</th>
-      <th>First Level Class Dict Count</th>
+      <th>Number of questions</th>
+      <th>Number of questions</th>
     </tr>
   </thead>
   <tbody>
