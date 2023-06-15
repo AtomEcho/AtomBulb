@@ -82,7 +82,7 @@
 <table class="tg">
 <thead style="background-color: lightgreen;">
   <tr>
-    <th class="tg-acrh" colspan="2">通用知识：通用知识涵盖了基础科学、数学、历史文化、语言文学、社会科学、日常生活技能以及现代技术应用等多个方面的基本概念和信息。</th>
+    <th class="tg-acrh" colspan="2", bgcolor="CornflowerBlue">通用知识：通用知识涵盖了基础科学、数学、历史文化、语言文学、社会科学、日常生活技能以及现代技术应用等多个方面的基本概念和信息。</th>
   </tr>
 </thead>
 <tbody>
