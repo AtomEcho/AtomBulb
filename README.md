@@ -1,4 +1,4 @@
-<h1 align="center">AtomGPT</h1>
+<h1 align="center">AtomBulb</h1>
 <h4 align="center">
     <p>
         <a href="https://github.com/AtomEcho/AtomBulb/README_EN.md">English</a> |
