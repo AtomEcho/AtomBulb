@@ -21,8 +21,11 @@
 未来，我们会不断为大模型家庭引入新的成员。为了能够更公平地去探索各个大模型的能力，我们为每个大模型起了个别名，包括：
 <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Radish.svg width=30 height=30 />萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Eggplant.svg width=30 height=30 />茄子、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Carrot.svg width=30 height=30 />胡萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Chili.svg width=30 height=30 />辣椒、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Pumpkin.svg width=30 height=30 />南瓜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Potato.svg width=30 height=30 />土豆等。
 
-### 数据介绍：
-**问题分类信息**：数据包含在question.json
+### 如何评价大模型的能力：
+由于大模型在不同任务、知识上具有超强的通用能力，如何客观、准确地评价它们是一个巨大的挑战。为此，我们收集包含1000多条（持续更新）问题的测试集来测试大模型。这些测试问题覆盖了大模型不同维度的能力，能充分体现出大模型的通用能力。
+
+#### 评测问题格式：
+数据包含在[eval_question.json](https://github.com/AtomEcho/AtomBulb/blob/main/eval_question.json)，格式如下：
 ```
  "qid": 问题编号
  "question": 问题描述
@@ -33,16 +36,17 @@
 ```
 [
     {
-        "qid": 0,
-        "question": "请你写出一个可以生成五个不同随机数的 Python 程序。",
-        "first_level_class": "代码编程",
-        "second_level_class": "代码生成"
+        "qid": 2,
+        "question": "什么是机器学习？它有哪些应用场景？",
+        "first_level_class": "通用知识",
+        "second_level_class": "自然科学"
     },
 	...
 ]
 ```
 
-**问题回答信息**：数据包含在每个模型目录下的answer-<日期>.json，其中“日期”字段表示该份答案获取的具体时间，方便我们对应到具体的模型版本。在answer-<日期>.json中，具体的字段信息如下，我们之后会进一步扩展用户的反馈数据：
+#### 评测回答格式：
+数据包含在每个模型目录下的answer-<日期>.json，其中“日期”字段表示该份答案获取的具体时间，方便我们对应到具体的模型版本。在answer-<日期>.json中，具体的字段信息如下，我们之后会进一步扩展用户的反馈数据：
 ```
  "qid": 问题编号
  "answer": 模型回答
@@ -50,16 +54,16 @@
 ```
 [
     {
-        "qid": 0,
-        "answer": "请你写出一个可以生成五个不同随机数的 Python 程序。",
+        "qid": 2,
+        "answer": "机器学习是指利用计算机程序对数据进行训练，从而使计算机具有智能化和自适应性的一种方法。\n\n机器学习可以广泛应用于各个领域，包括但不限于以下几个方面：\n\n1. 自然语言处理：例如机器翻译、文本分类、情感分析等。\n\n2. 金融：例如信用风险评估、投资组合优化、欺诈检测等。\n\n3. 医疗保健：例如疾病预测、医疗影像分析、药物研发等。\n\n4. 智能交通：例如路况预测、无人驾驶、智慧公交等。\n\n5. 电商：例如推荐系统、广告精准投放、用户画像等。\n\n6. 工业制造：例如质量预测、生产调度优化、供应链管理等。\n\n7. 安全监控：例如视频监控、入侵检测、网络安全等。\n\n8. 游戏：例如游戏智能NPC、游戏难度平衡、动态剧情生成等。",
     },
 	...
 ]
 ```
 
-### 如何评价大模型的能力：
-由于大模型在不同任务、知识上具有超强的通用能力，如何客观、准确地评价它们是一个巨大的挑战。为此，我们采取两种方式：
-1. 通过OpenAI的GPT-3.5/GPT-4来评分：GPT-3.5/GPT-4是目前大家公认的能力最强的大模型，因此，我们用GPT-3.5/GPT-4来评价各个模型的问答效果。后期，我们会全部采用GPT-4进行评测。我们采用以下格式来对GPT-3.5/GPT-4提问：
+#### 打分机制：
+由于大模型在不同任务、知识上具有超强的通用能力，如何客观、准确地评价它们是一个巨大的挑战。关于打分机制，我们采取两种方式：
+1. 通过OpenAI的GPT-4来评分：GPT-4是目前大家公认的能力最强的大模型，因此，我们用GPT-4来评价各个模型的问答效果。我们采用以下格式来对GPT-4提问：
 ```
 您是一个乐于助人和准确的助理，用于检查回复具体问题的答案的质量。
 [问题]：{question}
@@ -76,10 +80,10 @@
 
 2. 通过用户的反馈来评分：在每个问题的答案下方，我们展示了不同模型的回答，用户可以“点赞”或“点踩”每个答案。我们将统计每个模型的答案得分进行评价，这是一种最为客观和准确的评价方式，但是依赖于大量的用户反馈。因此，我们欢迎每一位朋友在答案下方给出您的评价，您的反馈将影响未来AGI的发展方向。
 
-### 从哪些方面评价大模型
+#### 从哪些维度评价大模型
 根据我们对大量开源问答数据、社交媒体、论坛、书籍的整理（例如：BELLE、十万个为什么、弱智吧等），经过反复的讨论和梳理，最终设计了八个大的类别来探索大模型的能力，包括：通用知识、语言理解、创作能力、逻辑推理、代码编程、工作技能、使用工具、人格特征。在每个大的类别下又细分了不同的子类，以尽可能全面地覆盖大模型的能力范畴。具体对于每个类别的详细介绍如下，我们也欢迎大家集思广益，让这个分类体系更加全面和准确。
 
-<table class="tg">
+<table class="tg" style="width: 100px;">
 <thead style="background-color: lightgreen;">
   <tr>
     <th class="tg-acrh" colspan="2" bgcolor="CornflowerBlue">通用知识：通用知识涵盖了基础科学、数学、历史文化、语言文学、社会科学、日常生活技能以及现代技术应用等多个方面的基本概念和信息。</th>
@@ -119,7 +123,7 @@
     <td class="tg-0pky">医疗健康知识涵盖了疾病预防、诊断、治疗、康复、身心健康、营养饮食等多方面的医学专业知识和实用技巧。</td>
   </tr>
   <tr>
-    <td class="tg-ik58" colspan="2" bgcolor="CornflowerBlue">语言理解：语言理解涵盖了词汇、语法、句法、语义、修辞、语境、非言语线索等多个方面的理解，以及如何将这些组合起来理解和解释口头或书面语言的含义和目的。</td>
+    <td class="tg-ik58" colspan="2" bgcolor="CornflowerBlue"><strong>语言理解：语言理解涵盖了词汇、语法、句法、语义、修辞、语境、非言语线索等多个方面的理解，以及如何将这些组合起来理解和解释口头或书面语言的含义和目的。</strong></td>
   </tr>
   <tr>
     <td class="tg-0lax">翻译</td>
@@ -150,7 +154,7 @@
     <td class="tg-0lax">阅读理解能力包含从文本中提取关键信息、理解主旨、分析推理、批判评估以及整合与应用知识等各个方面的技能。</td>
   </tr>
   <tr>
-    <td class="tg-740h" colspan="2">创作能力：创作能力指通过创新思维和知识技能，产生独特和有价值的新作品或新想法的能力，能够自动生成富有创意、连贯、可读性较高的文本作品。</td>
+    <td class="tg-740h" colspan="2"><strong>创作能力：创作能力指通过创新思维和知识技能，产生独特和有价值的新作品或新想法的能力，能够自动生成富有创意、连贯、可读性较高的文本作品。</strong></td>
   </tr>
   <tr>
     <td class="tg-0lax">文学创作</td>
@@ -173,7 +177,7 @@
     <td class="tg-0lax">续写扩写是在已有的文本基础上，延伸其情节、创意或主题，形成更长或更完整的作品。</td>
   </tr>
   <tr>
-    <td class="tg-nltl" colspan="2">逻辑推理：逻辑推理能力是指通过分析和理解已知的事实或信息，以合理、系统的方式推导出新的信息或结论的能力。</td>
+    <td class="tg-nltl" colspan="2"><strong>逻辑推理：逻辑推理能力是指通过分析和理解已知的事实或信息，以合理、系统的方式推导出新的信息或结论的能力。</strong></td>
   </tr>
   <tr>
     <td class="tg-0lax">数学</td>
@@ -188,7 +192,7 @@
     <td class="tg-0lax">分析能力是指模型对输入的信息进行深入理解，发现其中的模式和结构，通过推理和逻辑进行处理，并能生成有见地的、结构化的输出或答案，一般的分析问题具有较为复杂的逻辑推理流程。</td>
   </tr>
   <tr>
-    <td class="tg-u287" colspan="2">代码编程：代码编程能力是指理解、设计和实现计算机程序的能力，包括熟悉编程语言、逻辑思维、问题解决和代码组织的能力。</td>
+    <td class="tg-u287" colspan="2"><strong>代码编程：代码编程能力是指理解、设计和实现计算机程序的能力，包括熟悉编程语言、逻辑思维、问题解决和代码组织的能力。</strong></td>
   </tr>
   <tr>
     <td class="tg-0lax">代码生成</td>
@@ -207,7 +211,7 @@
     <td class="tg-0lax">代码优化是通过对程序代码进行修改和调整，以提高程序运行效率、减少内存占用、降低程序复杂度和提高可读性的过程。</td>
   </tr>
   <tr>
-    <td class="tg-cxgh" colspan="2">工作技能：工作技能是指在职业领域中为有效完成特定任务所需的知识、能力和经验。</td>
+    <td class="tg-cxgh" colspan="2"><strong>工作技能：工作技能是指在职业领域中为有效完成特定任务所需的知识、能力和经验。</strong></td>
   </tr>
   <tr>
     <td class="tg-0lax">组织策划</td>
@@ -226,7 +230,7 @@
     <td class="tg-0lax">设计创造是一种通过创意、技巧和审美观念，将想法、概念和需求转化为实际可视化或实用化解决方案的过程。</td>
   </tr>
   <tr>
-    <td class="tg-0khl" colspan="2">使用工具：大模型与外部工具进行集成，通过适当的接口和数据格式实现交互，并确保模型能够正确理解和利用外部工具提供的功能和结果。</td>
+    <td class="tg-0khl" colspan="2"><strong>使用工具：大模型与外部工具进行集成，通过适当的接口和数据格式实现交互，并确保模型能够正确理解和利用外部工具提供的功能和结果。</strong></td>
   </tr>
   <tr>
     <td class="tg-0lax">搜索引擎</td>
@@ -237,7 +241,7 @@
     <td class="tg-0lax">大模型与计算工具进行集成，通过适当的接口和数据传递方式，使模型能够调用计算工具如计算器、WolframAlpha等，以实现计算、分析或模拟等任务。</td>
   </tr>
   <tr>
-    <td class="tg-mo2v" colspan="2">人格特征：人格特征是指AGI的持久稳定的思维、情感和行为模式，这些模式构成了它们的性格，影响它们在各种社会环境中的反应和互动方式。</td>
+    <td class="tg-mo2v" colspan="2"><strong>人格特征：人格特征是指AGI的持久稳定的思维、情感和行为模式，这些模式构成了它们的性格，影响它们在各种社会环境中的反应和互动方式。</strong></td>
   </tr>
   <tr>
     <td class="tg-0lax">安全</td>
@@ -256,28 +260,25 @@
 
 
 
-
-
-### 测试数据
-#### 数据来源
+#### 评测问题来源
 我们统计了每个问题的来源，如下表：
 
 
-| 来源        | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json) | [十万个为什么](https://10why.net/) | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) | [弱智吧](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3) | 其他 |
+| 来源   <img width=75/>     | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json) <img width=75/>| [十万个为什么](https://10why.net/) <img width=75/> | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) <img width=75/> | [弱智吧](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3)<img width=75/> | 其他<img width=70/> |
 | :---------- | :-------------------- | :--------------- | :-------------------- | :--------------------- | :--- |
 | 数量        | 1000条               | 30                | 20条                 | 24条                   | 17条  |
 
 
-#### 类别统计
+#### 评测问题的类别统计
 我们统计了每个类别问题的频次，如下表：
 
-<table border="1" class="dataframe">
+<table border="1" class="dataframe" style="width: 1000px;">
   <thead>
     <tr style="text-align: right;">
-      <th>First Level Class</th>
-      <th>Second Level Class</th>
-      <th>Number of questions</th>
-      <th>Number of questions</th>
+      <th>First Level Class<img width=100/></th>
+      <th>Second Level Class<img width=100/></th>
+      <th>Number of questions<img width=100/></th>
+      <th>Number of questions<img width=100/></th>
     </tr>
   </thead>
   <tbody>
@@ -423,6 +424,16 @@
       <td>服从</td>
       <td>1</td>
     </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
 
 
 
