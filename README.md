@@ -267,7 +267,7 @@
 
 | 来源   <img width=75/>     | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json) <img width=75/>| [十万个为什么](https://10why.net/) <img width=75/> | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) <img width=75/> | [弱智吧](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3)<img width=75/> | 其他<img width=70/> |
 | :---------- | :-------------------- | :--------------- | :-------------------- | :--------------------- | :--- |
-| 数量        | 1000条               | 30                | 20条                 | 24条                   | 17条  |
+| 数量        | 1000条               | 30条                | 20条                 | 24条                   | 17条  |
 
 
 #### 评测问题的类别统计
