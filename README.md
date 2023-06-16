@@ -276,10 +276,10 @@
 <table border="1" class="dataframe" style="width: 1000px;">
   <thead>
     <tr style="text-align: right;">
-      <th>First Level Class<img width=100/></th>
-      <th>Second Level Class<img width=100/></th>
-      <th>Number of questions<img width=100/></th>
-      <th>Number of questions<img width=100/></th>
+      <th>一级分类<img width=200/></th>
+      <th>二级分类<img width=200/></th>
+      <th>问题数量<img width=150/></th>
+      <th>问题数量<img width=150/></th>
     </tr>
   </thead>
   <tbody>
