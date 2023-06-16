@@ -129,7 +129,7 @@ Based on our extensive compilation of open-source question-answering data, socia
   </tr>
   
   <tr>
-    <td class="tg-ik58" colspan="2" bgcolor="CornflowerBlue">Language Understanding: Language understanding covers the comprehension of various aspects such as vocabulary, grammar, syntax, semantics, rhetoric, context, and non-verbal cues, as well as how to combine them to understand and interpret the meaning and purpose of oral or written language.
+    <td class="tg-ik58" colspan="2" bgcolor="CornflowerBlue"><strong>Language Understanding: Language understanding covers the comprehension of various aspects such as vocabulary, grammar, syntax, semantics, rhetoric, context, and non-verbal cues, as well as how to combine them to understand and interpret the meaning and purpose of oral or written language.</strong>
 </td>
   </tr>
   <tr>
@@ -161,7 +161,7 @@ Based on our extensive compilation of open-source question-answering data, socia
     <td class="tg-0lax">Reading comprehension ability includes skills such as extracting key information from text, understanding the main idea, analyzing reasoning, critical evaluation, and integrating and applying knowledge.</td>
 </tr>
 <tr>
-    <td class="tg-740h" colspan="2">Creative Writing: Creative writing ability refers to the ability to generate unique and valuable new works or ideas through innovative thinking and knowledge skills, capable of automatically producing creative, coherent, and highly readable written works.</td>
+    <td class="tg-740h" colspan="2"><strong>Creative Writing: Creative writing ability refers to the ability to generate unique and valuable new works or ideas through innovative thinking and knowledge skills, capable of automatically producing creative, coherent, and highly readable written works.</strong></td>
 </tr>
 <tr>
     <td class="tg-0lax">Literary Creation</td>
@@ -184,7 +184,7 @@ Based on our extensive compilation of open-source question-answering data, socia
     <td class="tg-0lax">Rewriting and expansion involve extending the plot, creativity, or theme based on existing text, creating a longer or more complete work.</td>
 </tr>
 <tr>
-    <td class="tg-nltl" colspan="2">Logical Reasoning: Logical reasoning ability refers to the ability to deduce new information or conclusions in a rational and systematic manner through the analysis and understanding of known facts or information.</td>
+    <td class="tg-nltl" colspan="2"><strong>Logical Reasoning: Logical reasoning ability refers to the ability to deduce new information or conclusions in a rational and systematic manner through the analysis and understanding of known facts or information.</strong></td>
 </tr>
 <tr>
     <td class="tg-0lax">Mathematics</td>
@@ -199,7 +199,7 @@ Based on our extensive compilation of open-source question-answering data, socia
     <td class="tg-0lax">Analytical ability refers to the model's ability to deeply understand the input information, identify patterns and structures within it, process them through inference and logic, and generate insightful and structured outputs or answers. Typical analysis problems involve complex logical reasoning processes.</td>
 </tr>
 <tr>
-    <td class="tg-u287" colspan="2">Code Programming: Code programming ability refers to the ability to understand, design, and implement computer programs, including familiarity with programming languages, logical thinking, problem-solving, and code organization skills.</td>
+    <td class="tg-u287" colspan="2"><strong>Code Programming: Code programming ability refers to the ability to understand, design, and implement computer programs, including familiarity with programming languages, logical thinking, problem-solving, and code organization skills.</strong></td>
 </tr>
 <tr>
     <td class="tg-0lax">Code Generation</td>
@@ -219,7 +219,7 @@ Based on our extensive compilation of open-source question-answering data, socia
 </tr>
   
  <tr>
-    <td class="tg-cxgh" colspan="2">Job Skills: Job skills refer to the knowledge, abilities, and experience required to effectively accomplish specific tasks in a professional field.</td>
+    <td class="tg-cxgh" colspan="2"><strong>Job Skills: Job skills refer to the knowledge, abilities, and experience required to effectively accomplish specific tasks in a professional field.</strong></td>
 </tr>
 <tr>
     <td class="tg-0lax">Organizational Planning</td>
@@ -238,7 +238,7 @@ Based on our extensive compilation of open-source question-answering data, socia
     <td class="tg-0lax">Design and creativity involve the process of transforming ideas, concepts, and requirements into practical visual or functional solutions through creativity, skills, and aesthetic sensibilities.</td>
 </tr>
 <tr>
-    <td class="tg-0khl" colspan="2">Tool Usage: Integration of large models with external tools, ensuring proper interaction through appropriate interfaces and data formats, and enabling the model to understand and utilize the functionality and outputs provided by external tools.</td>
+    <td class="tg-0khl" colspan="2"><strong>Tool Usage: Integration of large models with external tools, ensuring proper interaction through appropriate interfaces and data formats, and enabling the model to understand and utilize the functionality and outputs provided by external tools.</strong></td>
 </tr>
 <tr>
     <td class="tg-0lax">Search Engines</td>
@@ -249,7 +249,7 @@ Based on our extensive compilation of open-source question-answering data, socia
     <td class="tg-0lax">Integration of large models with computational tools, enabling the model to invoke computational tools such as calculators, WolframAlpha, etc., through appropriate interfaces and data exchange methods to perform tasks like calculations, analysis, or simulations.</td>
 </tr>
 <tr>
-    <td class="tg-mo2v" colspan="2">Personality Traits: Personality traits refer to the enduring and stable patterns of thinking, emotions, and behaviors of AGI, which constitute their character and influence their responses and interactions in various social environments.</td>
+    <td class="tg-mo2v" colspan="2"><strong>Personality Traits: Personality traits refer to the enduring and stable patterns of thinking, emotions, and behaviors of AGI, which constitute their character and influence their responses and interactions in various social environments.</strong></td>
 </tr>
 <tr>
     <td class="tg-0lax">Security</td>
@@ -276,7 +276,7 @@ Based on our extensive compilation of open-source question-answering data, socia
 #### Source of Evaluation Questions
 We have collected the sources of each question, as shown in the table below:
   
-| Source<img width=75/> | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json) | [Ten Thousand Whys](https://10why.net/) | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) | [Weak IQ Baidu Tieba](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3) | Others <img width=75/> |
+| Source<img width=50/> | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json)<img width=20/> | [Ten Thousand Whys](https://10why.net/)<img width=30/> | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) <img width=50/>| [Weak IQ Baidu Tieba](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3)<img width=50/> | Others <img width=50/> |
 | ------ | ----------------------------------- | -------------------------------------- | ----------------------------------- | ------------------------------------ | ------ |
 | Amount | 1000                                 | 30                                     | 20                                  | 24                                   | 17     |
 
