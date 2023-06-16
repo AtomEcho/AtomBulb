@@ -1,4 +1,4 @@
-<h1 align="center">AtomBulb<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=45 height=45 /></h1>
+<h1 align="center">AtomBulb</h1>
 <h4 align="center">
     <p>
         <a href="https://github.com/AtomEcho/AtomBulb/blob/main/README_en.md">English</a> |
@@ -6,7 +6,7 @@
     <p>
 </h4>
 
-### Bulb<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=30 height=30 /> 项目的愿景
+### Bulb项目的愿景
 在这个颠覆时代的AI技术浪潮中，国内外涌现出了一大批有影响力和代表性的大模型产品，包括但不限于：
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/gpt.svg width=30 height=30 /> OpenAI的ChatGPT
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/chatglm.svg width=25 height=30 /> &nbsp; 智谱AI的ChatGLM
@@ -16,7 +16,7 @@
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/xinghuo.svg width=30 height=30 /> 讯飞的星火大模型
 
 
-我们尝试和这些未来的AGI对话，去了解它们的所思所想，打破人类和AGI之间的认知隔阂。[**Bulb**](https://bulb.atomecho.cn/)<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=30 height=30 /> 项目的名称意为“灯泡”，旨在为大型模型产品的能力边界照亮明灯，以便我们能够对它们有更具体和定量的认识。在我们的官网获取更详细的信息：https://bulb.atomecho.cn
+我们尝试和这些未来的AGI对话，去了解它们的所思所想，打破人类和AGI之间的认知隔阂。[**Bulb**](https://bulb.atomecho.cn/) 项目的名称意为“灯泡”，旨在为大型模型产品的能力边界照亮明灯，以便我们能够对它们有更具体和定量的认识。在我们的官网获取更详细的信息：https://bulb.atomecho.cn
 
 未来，我们会不断为大模型家庭引入新的成员。为了能够更公平地去探索各个大模型的能力，我们为每个大模型起了个别名，包括：
 <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Radish.svg width=30 height=30 />萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Eggplant.svg width=30 height=30 />茄子、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Carrot.svg width=30 height=30 />胡萝卜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Chili.svg width=30 height=30 />辣椒、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Pumpkin.svg width=30 height=30 />南瓜、<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Potato.svg width=30 height=30 />土豆等。
@@ -25,7 +25,7 @@
 由于大模型在不同任务、知识上具有超强的通用能力，如何客观、准确地评价它们是一个巨大的挑战。为此，我们收集包含1000多条（持续更新）问题的测试集来测试大模型。这些测试问题覆盖了大模型不同维度的能力，能充分体现出大模型的通用能力。
 
 #### 评测问题格式：
-数据包含在[eval_question.json](https://github.com/AtomEcho/AtomBulb/blob/main/eval_question.json)，格式如下：
+数据包含在[question.json](https://github.com/AtomEcho/AtomBulb/blob/main/question.json)，格式如下：
 ```
  "qid": 问题编号
  "question": 问题描述
@@ -56,6 +56,7 @@
     {
         "qid": 2,
         "answer": "机器学习是指利用计算机程序对数据进行训练，从而使计算机具有智能化和自适应性的一种方法。\n\n机器学习可以广泛应用于各个领域，包括但不限于以下几个方面：\n\n1. 自然语言处理：例如机器翻译、文本分类、情感分析等。\n\n2. 金融：例如信用风险评估、投资组合优化、欺诈检测等。\n\n3. 医疗保健：例如疾病预测、医疗影像分析、药物研发等。\n\n4. 智能交通：例如路况预测、无人驾驶、智慧公交等。\n\n5. 电商：例如推荐系统、广告精准投放、用户画像等。\n\n6. 工业制造：例如质量预测、生产调度优化、供应链管理等。\n\n7. 安全监控：例如视频监控、入侵检测、网络安全等。\n\n8. 游戏：例如游戏智能NPC、游戏难度平衡、动态剧情生成等。",
+	"score": 8
     },
 	...
 ]
