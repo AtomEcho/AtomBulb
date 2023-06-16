@@ -1,4 +1,4 @@
-### Bulb<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=30 height=30 /> Project Vision
+### Bulb Project Vision
 In this era of disruptive AI technology, a large number of influential and representative large-scale models have emerged both domestically and internationally, including but not limited to:
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/gpt.svg width=30 height=30 /> ChatGPT by OpenAI
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/chatglm.svg width=25 height=30 /> &nbsp; ChatGLM by Zhipu AI
@@ -7,7 +7,7 @@ In this era of disruptive AI technology, a large number of influential and repre
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/tongyi.svg width=22 height=22 /> &nbsp; Tianyi Qianwen by Alibaba
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/xinghuo.svg width=30 height=30 /> Xinghuo Model by iFlytek
 
-We attempt to have conversations with these future AGIs to understand their thoughts and break down the cognitive barriers between humans and AGIs. [**Bulb**](https://bulb.atomecho.cn/)<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=30 height=30 /> is named "Bulb" with the aim of shedding light on the boundaries of large-scale model capabilities, providing us with a more specific and quantitative understanding of them. For more detailed information, visit our official website: https://bulb.atomecho.cn
+We attempt to have conversations with these future AGIs to understand their thoughts and break down the cognitive barriers between humans and AGIs. [**Bulb**](https://bulb.atomecho.cn/) is named "Bulb" with the aim of shedding light on the boundaries of large-scale model capabilities, providing us with a more specific and quantitative understanding of them. For more detailed information, visit our official website: https://bulb.atomecho.cn
 
 In the future, we will continue to introduce new members to the family of large-scale models. To explore the capabilities of each model more fairly, we have given each model a nickname, including:
 <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Radish.svg width=30 height=30 /> Radish,
@@ -18,8 +18,11 @@ In the future, we will continue to introduce new members to the family of large-
 <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Potato.svg width=30 height=30 /> Potato, etc.
 
 
-### Data Introduction:
-**Question Classification Information**: The data is contained in question.json
+### How to Evaluate the Abilities of Large Models:
+Due to the strong generalization abilities of large models across different tasks and knowledge domains, evaluating them objectively and accurately is a significant challenge. For this purpose, we have collected a test set comprising over 1000 questions (continuously updated) to evaluate the performance of the large model. These test questions cover various dimensions of the large model's capabilities and effectively demonstrate its general ability.
+
+#### Format of Evaluation Questions:
+The data is contained in [question.json](https://github.com/AtomEcho/AtomBulb/blob/main/question.json)。
 ```
 "qid": Question ID
 "question": Question description
@@ -30,17 +33,18 @@ For example:
 ```
 [
     {
-        "qid": 0,
-        "question": "请你写出一个可以生成五个不同随机数的 Python 程序。",
-        "first_level_class": "代码编程",
-        "second_level_class": "代码生成"
+        "qid": 2,
+        "question": "What is machine learning? What are its applications?",
+        "first_level_class": "General Knowledge",
+        "second_level_class": "Natural Sciences"
     },
 	...
 ]
 ```
 
 
-**Question Answer Information**: The data is contained in answer-<date>.json under each model directory, where the "date" field represents the specific time when the answers were obtained, allowing us to correspond them to specific model versions. In answer-<date>.json, the specific field information is as follows. We will further expand the user feedback data in the future:
+#### Format of Answers: 
+The data is contained in answer-<date>.json under each model directory, where the "date" field represents the specific time when the answers were obtained, allowing us to correspond them to specific model versions. In answer-<date>.json, the specific field information is as follows. We will further expand the user feedback data in the future:
 ```
  "qid": Question ID
  "answer": Model's answer
@@ -49,14 +53,16 @@ For example:
 [
     {
         "qid": 0,
-        "answer": "请你写出一个可以生成五个不同随机数的 Python 程序。",
+        "answer": "Machine learning refers to a method of using computer programs to train data, enabling computers to possess intelligence and adaptability.\n\nMachine learning can be widely applied in various fields, including but not limited to the following:\n\n1. Natural Language Processing: Examples include machine translation, text classification, sentiment analysis, etc.\n\n2. Finance: Examples include credit risk assessment, portfolio optimization, fraud detection, etc.\n\n3. Healthcare: Examples include disease prediction, medical image analysis, drug discovery, etc.\n\n4. Intelligent Transportation: Examples include traffic prediction, autonomous driving, smart public transportation, etc.\n\n5. E-commerce: Examples include recommendation systems, targeted advertising, user profiling, etc.\n\n6. Industrial Manufacturing: Examples include quality prediction, production scheduling optimization, supply chain management, etc.\n\n7. Security Monitoring: Examples include video surveillance, intrusion detection, network security, etc.\n\n8. Gaming: Examples include intelligent game NPCs, game difficulty balancing, dynamic story generation, etc.
+",
+	"score": 8
     },
 	...
 ]
 ```
 
-### How to Evaluate the Abilities of Large Models:
-Due to the strong generalization abilities of large models across different tasks and knowledge domains, evaluating them objectively and accurately is a significant challenge. To address this, we adopt two approaches:
+### How to Score Answers from Different LLMs:
+Due to the strong generalization abilities of large models across different tasks and knowledge domains, evaluating them objectively and accurately is a significant challenge. Regarding the scoring mechanism, we adopt two approaches:
 1. Scoring with OpenAI's GPT-4: GPT-4 is currently recognized as one of the most capable large models. Therefore, we use GPT-4 to assess the question-answering performance of each model.  We use the following format to pose questions to GPT-4:
 
 ```
@@ -267,12 +273,10 @@ Based on our extensive compilation of open-source question-answering data, socia
 
 
 
-
-### 测试数据
 #### Source of Evaluation Questions
 We have collected the sources of each question, as shown in the table below:
   
-| Source | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json) | [Ten Thousand Whys](https://10why.net/) | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) | [Weak IQ Baidu Tieba](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3) | Others |
+| Source<img width=75/> | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json) | [Ten Thousand Whys](https://10why.net/) | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) | [Weak IQ Baidu Tieba](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3) | Others <img width=75/> |
 | ------ | ----------------------------------- | -------------------------------------- | ----------------------------------- | ------------------------------------ | ------ |
 | Amount | 1000                                 | 30                                     | 20                                  | 24                                   | 17     |
 
@@ -280,7 +284,8 @@ We have collected the sources of each question, as shown in the table below:
 
   
 
-#### Frequency Statistics of Each Category of Questions
+#### Frequency Statistics of Each Class of Questions
+We have counted the frequency of questions in each category, as shown in the table below:
 
 <table border="1" class="dataframe">
   <thead>
@@ -340,159 +345,114 @@ We have collected the sources of each question, as shown in the table below:
       <td>Economy</td>
       <td>8</td>
     </tr>
-  </tbody>
-</table>
-  
-  
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>First Level Class</th>
-      <th>Second Level Class</th>
-      <th>Number of questions</th>
-      <th>Number of questions</th>
-    </tr>
-  </thead>
-  <tbody>
     <tr>
-      <td rowspan="4">代码编程</td>
-      <td>代码生成</td>
-      <td>27</td>
-      <td rowspan="4">42</td>
-    </tr>
-    <tr>
-      <td>代码优化</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>代码解释</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td>代码纠错</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td rowspan="7">通用知识</td>
-      <td>社会人文</td>
-      <td>111</td>
-      <td rowspan="7">457</td>
-    </tr>
-    <tr>
-      <td>自然科学</td>
-      <td>155</td>
-    </tr>
-    <tr>
-      <td>医疗健康</td>
-      <td>35</td>
-    </tr>
-    <tr>
-      <td>生活常识</td>
-      <td>75</td>
-    </tr>
-    <tr>
-      <td>时效信息</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <td>技术</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <td>经济</td>
-      <td>8</td>
-    </tr>
-    <tr>
-      <td rowspan="5">创作能力</td>
-      <td>创意文案</td>
+      <td rowspan="5">Creative Writing</td>
+      <td>Creative Copywriting</td>
       <td>38</td>
       <td rowspan="5">198</td>
     </tr>
     <tr>
-      <td>文学创作</td>
+      <td>Literary Creation</td>
       <td>24</td>
     </tr>
     <tr>
-      <td>专业文稿</td>
+      <td>Professional Documentation</td>
       <td>44</td>
     </tr>
     <tr>
-      <td>续写扩写</td>
+      <td>Rewriting and Expansion</td>
       <td>17</td>
     </tr>
     <tr>
-      <td>风格迁移</td>
+      <td>Style Transfer</td>
       <td>75</td>
     </tr>
     <tr>
-      <td rowspan="7">语言理解</td>
-      <td>语法词汇</td>
+      <td rowspan="7">Language Understanding</td>
+      <td>Grammar and Vocabulary</td>
       <td>22</td>
       <td rowspan="7">202</td>
     </tr>
     <tr>
-      <td>摘要总结</td>
+      <td>Summarization</td>
       <td>46</td>
     </tr>
     <tr>
-      <td>翻译</td>
+      <td>Translation</td>
       <td>39</td>
     </tr>
     <tr>
-      <td>情感分类</td>
+      <td>Sentiment Analysis</td>
       <td>11</td>
     </tr>
     <tr>
-      <td>主题分类</td>
+      <td>Topic Classification</td>
       <td>29</td>
     </tr>
     <tr>
-      <td>阅读理解</td>
+      <td>Reading Comprehension</td>
       <td>27</td>
     </tr>
     <tr>
-      <td>信息抽取</td>
+      <td>Information Extraction</td>
       <td>28</td>
     </tr>
     <tr>
-      <td rowspan="3">逻辑推理</td>
-      <td>数学</td>
+      <td rowspan="3">Logical Reasoning</td>
+      <td>Mathematics</td>
       <td>74</td>
       <td rowspan="3">162</td>
     </tr>
     <tr>
-      <td>分析</td>
+      <td>Analysis</td>
       <td>27</td>
     </tr>
     <tr>
-      <td>思辨</td>
+      <td>Critical Thinking</td>
       <td>61</td>
     </tr>
     <tr>
-      <td rowspan="4">工作技能</td>
-      <td>协作沟通</td>
+      <td rowspan="4">Job Skills</td>
+      <td>Collaboration and Communication</td>
       <td>4</td>
       <td rowspan="4">27</td>
     </tr>
     <tr>
-      <td>营销运营</td>
+      <td>Marketing Operations</td>
       <td>11</td>
     </tr>
     <tr>
-      <td>组织策划</td>
+      <td>Organizational Planning</td>
       <td>9</td>
     </tr>
     <tr>
-      <td>设计创造</td>
+      <td>Design and Creativity</td>
       <td>3</td>
     </tr>
     <tr>
-      <td rowspan="2">人格特征</td>
-      <td>偏见</td>
+      <td rowspan="3">Personality Traits</td>
+      <td>Bias</td>
       <td>2</td>
-      <td rowspan="2">3</td>
+      <td rowspan="3">3</td>
     </tr>
     <tr>
-      <td>服从</td>
+      <td>Compliance</td>
       <td>1</td>
     </tr>
+    <tr>
+      <td>Security</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Tool Usage</td>
+      <td>Search Engines</td>
+      <td>0</td>
+      <td rowspan="2">0</td>
+    </tr>
+    <tr>
+      <td>Computational Tools</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+  
