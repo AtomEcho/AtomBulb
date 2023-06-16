@@ -1,7 +1,7 @@
 <h1 align="center">AtomBulb<img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/qinwei/bulb_icon.svg width=45 height=45 /></h1>
 <h4 align="center">
     <p>
-        <a href="">English</a> |
+        <a href="https://github.com/AtomEcho/AtomBulb/blob/main/README_en.md">English</a> |
         <b>中文</b>
     <p>
 </h4>
