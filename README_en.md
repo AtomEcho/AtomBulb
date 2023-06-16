@@ -18,7 +18,7 @@ In the future, we will continue to introduce new members to the family of large-
 <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/Potato.svg width=30 height=30 /> Potato, etc.
 
 
-### How to Evaluate the Abilities of Large Models:
+#### How to Evaluate the Abilities of Large Models:
 Due to the strong generalization abilities of large models across different tasks and knowledge domains, evaluating them objectively and accurately is a significant challenge. For this purpose, we have collected a test set comprising over 1000 questions (continuously updated) to evaluate the performance of the large model. These test questions cover various dimensions of the large model's capabilities and effectively demonstrate its general ability.
 
 #### Format of Evaluation Questions:
@@ -61,7 +61,7 @@ The data is contained in answer-<date>.json under each model directory, where th
 ]
 ```
 
-### How to Score Answers from Different LLMs:
+#### How to Score Answers from Different LLMs:
 Due to the strong generalization abilities of large models across different tasks and knowledge domains, evaluating them objectively and accurately is a significant challenge. Regarding the scoring mechanism, we adopt two approaches:
 1. Scoring with OpenAI's GPT-4: GPT-4 is currently recognized as one of the most capable large models. Therefore, we use GPT-4 to assess the question-answering performance of each model.  We use the following format to pose questions to GPT-4:
 
@@ -75,7 +75,6 @@ The above prompt is displayed in English, but in actual evaluations, we use Chin
  
 In the above prompt, `{question}` and `{answer}` correspond to the content of the question being tested and the response from the large model, respectively. Here is a specific example:
 
-What is immunity? Please answer the following questions, ensuring the accuracy of the answers.  
 ```
 You are a helpful and accurate assistant for reviewing the quality of answers to specific questions.
 [Question]: What is immunity? Please answer the following questions, ensuring the accuracy of the answers.  
@@ -85,7 +84,7 @@ Please provide feedback on the performance of an AI assistant in answering the f
 
 2. Based on user feedback, we rate the answers by displaying responses from different models beneath each question. Users can "like" or "dislike" each answer. We aggregate the scores for each model's answers to evaluate their performance. This is considered the most objective and accurate evaluation method, but it relies on a large volume of user feedback. Therefore, we welcome every user to provide their evaluation below the answers. Your feedback will influence the future development direction of AGI.
 
-### From which aspects to evaluate large models
+#### From which aspects to evaluate large models:
 Based on our extensive compilation of open-source question-answering data, social media, forums, and books (such as BELLE, "Ten Thousand Whys," "Weak-IQ Baidu Tieba," etc.), and through repeated discussions and refinement, we have designed eight major categories to explore the capabilities of large models. These categories include: general knowledge, language understanding, creative abilities, logical reasoning, code programming, job skills, tool utilization, and personality traits. Under each major category, there are further subdivisions to cover the range of capabilities of large models as comprehensively as possible. Detailed descriptions for each category are provided below, and we also welcome valuable input from everyone to make this classification system more comprehensive and accurate.
 
 <table class="tg">
@@ -273,7 +272,7 @@ Based on our extensive compilation of open-source question-answering data, socia
 
 
 
-#### Source of Evaluation Questions
+#### Source of Evaluation Questions:
 We have collected the sources of each question, as shown in the table below:
   
 | Source<img width=50/> | [BELLE eval set](https://github.com/LianjiaTech/BELLE/blob/main/eval/eval_set.json)<img width=20/> | [Ten Thousand Whys](https://10why.net/)<img width=30/> | [WikiHow](https://zh.wikihow.com/%E9%A6%96%E9%A1%B5) <img width=50/>| [Weak IQ Baidu Tieba](http://c.tieba.baidu.com/f/good?kw=%E5%BC%B1%E6%99%BA&ie=utf-8&cid=3)<img width=50/> | Others <img width=50/> |
@@ -290,10 +289,10 @@ We have counted the frequency of questions in each category, as shown in the tab
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th>First Level Class</th>
-      <th>Second Level Class</th>
-      <th>Number of questions</th>
-      <th>Number of questions</th>
+      <th>First Level Class<img width=200/></th>
+      <th>Second Level Class<img width=200/></th>
+      <th>Number of questions<img width=100/></th>
+      <th>Number of questions<img width=100/></th>
     </tr>
   </thead>
   <tbody>
