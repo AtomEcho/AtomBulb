@@ -2,10 +2,10 @@
 In this era of disruptive AI technology, a large number of influential and representative large-scale models have emerged both domestically and internationally, including but not limited to:
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/gpt.svg width=30 height=30 /> ChatGPT by OpenAI
 - <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/chatglm.svg width=25 height=30 /> &nbsp; ChatGLM by Zhipu AI
-- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/mianbi.svg width=30 height=30 /> Mianbi Model by Mianbi Intelligence
-- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/yiyan.svg width=30 height=30 /> Wenxin Yiyuan by Baidu
-- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/tongyi.svg width=22 height=22 /> &nbsp; Tianyi Qianwen by Alibaba
-- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/xinghuo.svg width=30 height=30 /> Xinghuo Model by iFlytek
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/mianbi.svg width=30 height=30 /> Mianbi Model by Model Best Intelligence
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/yiyan.svg width=30 height=30 /> ERNIE Bot by Baidu
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/tongyi.svg width=22 height=22 /> &nbsp; Tongyi Qianwen by Alibaba
+- <img src=https://file.atomecho.cn/d/%E6%9C%AC%E5%9C%B0/xiangtao/modelIcon/2023-6-13/xinghuo.svg width=30 height=30 /> Spark Model by iFlytek
 
 We attempt to have conversations with these future AGIs to understand their thoughts and break down the cognitive barriers between humans and AGIs. [**Bulb**](https://bulb.atomecho.cn/) is named "Bulb" with the aim of shedding light on the boundaries of large-scale model capabilities, providing us with a more specific and quantitative understanding of them. For more detailed information, visit our official website: https://bulb.atomecho.cn
 
