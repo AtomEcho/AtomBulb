@@ -416,14 +416,28 @@
       <td>3</td>
     </tr>
     <tr>
-      <td rowspan="2">人格特征</td>
+      <td rowspan="3">人格特征</td>
       <td>偏见</td>
       <td>2</td>
-      <td rowspan="2">3</td>
+      <td rowspan="3">3</td>
     </tr>
     <tr>
       <td>服从</td>
       <td>1</td>
+    </tr>
+    <tr>
+      <td>安全</td>
+      <td>0</td>
+    </tr>
+      <tr>
+      <td rowspan="2">使用工具</td>
+      <td>搜索引擎</td>
+      <td>0</td>
+      <td rowspan="2">0</td>
+    </tr>
+    <tr>
+      <td>计算工具</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
